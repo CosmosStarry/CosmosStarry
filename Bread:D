@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bread</title>
+    </head>
+    <body>
+        <center><button onclick="eat()" class="bread">Eat a bread</button><br>
+        </center>    
+            <div class="mainBody">
+            <br><br>
+                <div class="thatThing" id="two">
+                </div>
+                    <div class="thatThing" id="three">
+                    </div>
+                       <div class="thatThing" id="four">
+                       </div>
+                </div>
+            </div>
+    </body>
+</html>
+<style>
+    body {
+    background:black;
+}
+.bread{
+    border:double brown 5px;
+    background:orange;
+    font-family:Monospace, Melno;
+    font-weight:bold;
+    border-radius:10px;
+    font-size:25px;
+}
+.mainBody{
+    background:orange;
+    height:400px;
+    width:200px;
+    margin-top:20px;
+    margin-left:75px;
+    border-radius:2em 10.5em 10.5em 2em;
+    box-shadow:0px 0px 30px black inset;
+}
+.thatThing{
+    background: #9E5A00;
+    height:50px;
+    width:125px;
+    margin-left:75px;
+    margin-top:40px;
+    box-shadow:0px -5px 15px #643900 inset;
+}
+#two{
+     border-radius:1em 25em 1em 25em;
+}
+#three{
+       border-radius:1em 1em 1em 15em;
+}
+#four{
+    border-radius:1em 1em 15em 15em;
+}
+</style>
+<script>
+    let bread = parseInt(prompt("How many breads do you want",5));
+function eat(){
+    bread--;
+    if (bread < 0){
+        console.error("You can't eat any more breads")
+        }
+        else{
+            console.log("You have",bread,"bread left")
+        }
+}
+</script>
